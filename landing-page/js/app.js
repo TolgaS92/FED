@@ -58,7 +58,7 @@ const highlight = ( conditional, section ) => {
 const scrollHandler = () => {
     sections.forEach(section => {
         const elementOffset = offset(section);
-        inviewport = () => elementOffset < 140 && elementOffset >= -140;
+        inviewport = () => elementOffset < 150 && elementOffset >= -150;
         dimmer(section);
         highlight( inviewport(), section );
         
